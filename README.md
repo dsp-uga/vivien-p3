@@ -2,13 +2,13 @@
 ## Fluctuation Variance
 Implemented by using: Python 3 with OpenCV and NumPy modules
 
-#### Input arguments:
+### Input arguments:
 1 - text file of hashes
 2 - directory of data .tar files
 3 - directory of mask images
 4 - directory to output prediction masks
 
-#### Summary:
+### Summary:
 This script does the following:
  - Extract tar archives of images
  - Decode images into NumPy with OpenCV
@@ -17,17 +17,20 @@ This script does the following:
  - Calculate IoU accuracy
  - Export predicted mask images
 
-#### Notes: 
+### Notes: 
 Average accuracy for the test set of 211 videos were around 29%. Additionally, median filter has been implemented however, performed worse. Ways to explore more: FFT and optical flow.
 
-#### References:
+### References:
 https://docs.opencv.org/master/
 
 ## Pyramid Scene Parsing Network
 
 Pyrammid Scene Parsing Network(PSPNet) is used here for deep learning based segmentation. Implemented by using M2Lab open library.
 
-The model is pretrained on VOC 12 dataset with augmentation. And the model is modified and further trained on Cilia dataset for 5k epochs. The final performance is listed below.
+The model is pretrained on VOC 12 dataset with augmentation. And the model is modified and further trained on Cilia dataset for 5k epochs. 
+
+### Performance
+The final performance is listed below.
 
 | Class      | IoU   | Acc   |
 | :--------: | :---------: |:-------:|
@@ -41,6 +44,14 @@ The model is pretrained on VOC 12 dataset with augmentation. And the model is mo
 
 
 On Autolab, it reached 44 mIOU score
+
+### Notes and further direction
+
+1. consider cross frame information.
+2. pretrained on more related tasks.
+
+### References:
+https://github.com/open-mmlab/mmsegmentation
 
 
 

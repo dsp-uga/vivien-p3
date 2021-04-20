@@ -29,19 +29,16 @@ Pyrammid Scene Parsing Network(PSPNet) is used here for deep learning based segm
 
 The model is pretrained on VOC 12 dataset with augmentation. And the model is modified and further trained on Cilia dataset for 5k epochs. The final performance is listed below.
 
-+------------+-------+-------+
 | Class      | IoU   | Acc   |
-+------------+-------+-------+
+| :--------: | :---------: |:-------:|
 | background | 97.72 | 98.72 |
 | cell       | 96.15 | 98.07 |
 | cilia      | 82.87 | 91.4  |
-+------------+-------+-------+
 
-+--------+-------+-------+-------+
 | Scope  | mIoU  | mAcc  | aAcc  |
-+--------+-------+-------+-------+
+| :--------: | :---------: |:-------:|:-------:|
 | global | 92.25 | 96.06 | 97.94 |
-+--------+-------+-------+-------+
+
 
 On Autolab, it reached 44 mIOU score
 
